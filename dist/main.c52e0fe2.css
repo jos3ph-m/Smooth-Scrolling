@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Open+Sans:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "DM Mono", monospace;
+  font-size: 1.8em;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  background-color: rgb(241, 233, 233);
+  padding: 8em;
+  height: 100vh;
+}
+
+section:nth-of-type(2) {
+  background-color: #093615;
+  color: rgb(241, 233, 233);
+}
+
+.custom {
+  width: 900px;
+  height: 500px;
+  overflow: auto;
+}
+
+
+/*# sourceMappingURL=/main.c52e0fe2.css.map */

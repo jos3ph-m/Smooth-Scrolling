@@ -1,0 +1,27 @@
+{
+  "name": "smooth_scrollbar",
+  "version": "1.0.0",
+  "description": "This is a simple web app using Smooth Scrollbar, a JavaScript plugin built to customize the performance of the scrollbar.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "production": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jos3ph-m/smooth-scrolling.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jos3ph-m/smooth-scrolling/issues"
+  },
+  "homepage": "https://github.com/jos3ph-m/smooth-scrolling#readme",
+  "dependencies": {
+    "smooth-scrollbar": "^8.5.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
