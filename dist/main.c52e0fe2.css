@@ -15,6 +15,10 @@ h1 {
   font-family: "Open Sans", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 section {
   background-color: rgb(241, 233, 233);
   padding: 8em;
@@ -30,6 +34,7 @@ section:nth-of-type(2) {
   width: 900px;
   height: 500px;
   overflow: auto;
+  padding-right: 10px;
 }
 
 

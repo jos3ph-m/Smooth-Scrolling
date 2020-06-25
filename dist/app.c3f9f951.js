@@ -5602,41 +5602,44 @@ function (_super) {
 
 var _default = SmoothScrollbar;
 exports.default = _default;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","./polyfills":"../node_modules/smooth-scrollbar/polyfills.js","./scrollbar":"../node_modules/smooth-scrollbar/scrollbar.js","./plugin":"../node_modules/smooth-scrollbar/plugin.js","./style":"../node_modules/smooth-scrollbar/style.js"}],"js/brada.js":[function(require,module,exports) {
+},{"tslib":"../node_modules/tslib/tslib.es6.js","./polyfills":"../node_modules/smooth-scrollbar/polyfills.js","./scrollbar":"../node_modules/smooth-scrollbar/scrollbar.js","./plugin":"../node_modules/smooth-scrollbar/plugin.js","./style":"../node_modules/smooth-scrollbar/style.js"}],"js/there.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.brada = void 0;
+exports.there = void 0;
 
-var brada = function brada(greeting) {
-  return "".concat(greeting, " brada");
+var there = function there(greeting) {
+  return "".concat(greeting, " there");
 };
 
-exports.brada = brada;
+exports.there = there;
 },{}],"js/app.js":[function(require,module,exports) {
 "use strict";
 
 var _smoothScrollbar = _interopRequireDefault(require("smooth-scrollbar"));
 
-var _brada = require("./brada");
+var _there = require("./there");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var bradaTitle = document.getElementById("brada-title");
-bradaTitle.textContent = (0, _brada.brada)("Hello");
+bradaTitle.textContent = (0, _there.there)("Hello");
 var options = {
   damping: 0.1
 };
 var customOptions = {
-  damping: 0.07
+  damping: 0.02,
+  thumbMinSize: 100,
+  alwaysShowTracks: true,
+  continuousScrolling: false
 };
 
 _smoothScrollbar.default.init(document.querySelector("#my-scrollbar"), options);
 
 _smoothScrollbar.default.init(document.querySelector("#custom"), customOptions);
-},{"smooth-scrollbar":"../node_modules/smooth-scrollbar/index.js","./brada":"js/brada.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"smooth-scrollbar":"../node_modules/smooth-scrollbar/index.js","./there":"js/there.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -5664,7 +5667,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63841" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54745" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
